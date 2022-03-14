@@ -8,7 +8,7 @@ author: Nicole Gottschall
 Calculator can perform multiplication and division of two numbers.
 ==========================================================================*/
 
-
+/* user shouldn't be able to enter something else than numbers */
 
 
 
@@ -16,9 +16,12 @@ Calculator can perform multiplication and division of two numbers.
 preparation
 ==========================================================================*/
 /* get needed elements */
-multiply = document.querySelector('.multiply');
-divide = document.querySelector('.divide');
-resultSection = document.querySelector('.result-block');
+const value1 = document.querySelector('.value1');
+const value2 = document.querySelector('.value2');
+const multiply = document.querySelector('.multiply');
+const divide = document.querySelector('.divide');
+const resultSection = document.querySelector('.result-block');
+const result = document.querySelector('.result');
 
 /* hide result section */
 resultSection.style.display = "none";
@@ -27,9 +30,21 @@ resultSection.style.display = "none";
 calculation
 ==========================================================================*/
 multiply.addEventListener("click", function() {
-  alert("You want to multiply two numbers? You soon will be able to do so.");
+  if(value1.value == "" || value2.value == "") {
+    alert("Enter two numbers to get a result");
+  } else {
+    let sol = value1.value * value2.value;
+    result.innerHTML = sol;
+    resultSection.style.display = "inherit";
+  }
 });
 
 divide.addEventListener("click", function() {
-  alert("You want to divide two numbers? You soon will be able to do so.");
+  if(value1.value == "" || value2.value == "") {
+    alert("Enter two numbers to get a result");
+  } else {
+    let sol = value1.value / value2.value;
+    result.innerHTML = sol;
+    resultSection.style.display = "inherit";
+  }
 });
