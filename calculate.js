@@ -1,5 +1,5 @@
 /*=========================================================================
-Script for Calculator
+Script for Calculator 03/22
 
 file: calculate.js
 date: 14.03.2022
@@ -8,7 +8,7 @@ author: Nicole Gottschall
 Calculator can perform multiplication and division of two numbers.
 ==========================================================================*/
 
-/* user shouldn't be able to enter something else than numbers */
+
 
 
 

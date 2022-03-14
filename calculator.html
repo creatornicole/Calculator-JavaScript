@@ -3,26 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Calculator</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h3>JavaScript basic - Exercises, Practice, Solution <span>- <a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php">w3resource</a></span></h3>
-    <p><span>Task:</span> Write a JavaScript program to calculate multiplication and division of two numbers.</p>
+    <div class="container">
+      <h3>JavaScript basic - Exercises, Practice, Solution <span>- <a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php">w3resource</a></span></h3>
+      <p><span>Task:</span> Write a JavaScript program to calculate multiplication and division of two numbers.</p>
 
-    <form class="calculator" action="index.html">
-      <label for="1stNumber">1st Number:</label>
-      <input class="value1" type="number" name="1stNumber">
-      <br>
-      <label for="2ndNumber">2nd Number:</label>
-      <input class="value2" type="number" name="2ndNumber">
+      <form class="calculator" action="index.html">
+        <label for="1stNumber">1st Number:</label>
+        <input class="value1" type="number" name="1stNumber">
+        <br>
+        <label for="2ndNumber">2nd Number:</label>
+        <input class="value2" type="number" name="2ndNumber">
+      </form>
       <button class="multiply" type="button" name="button">Multiply</button>
       <button class="divide" type="button" name="button">Divide</button>
-
       <div class="result-block">
         <p>The Result is: </p>
         <p class="result"></p>
       </div>
-
-    </form>
+    </div>
 
     <script src="calculate.js"></script>
   </body>
